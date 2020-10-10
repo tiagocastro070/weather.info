@@ -1,0 +1,27 @@
+{
+  "name": "weather.info",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiagocastro070/weather.info.git"
+  },
+  "author": "Tiago Castro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiagocastro070/weather.info/issues"
+  },
+  "homepage": "https://github.com/tiagocastro070/weather.info#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

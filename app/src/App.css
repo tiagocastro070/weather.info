@@ -1,0 +1,80 @@
+:root {
+  --color-primary: #007bff;
+  --color-secondary: #ffc107;
+  --color-secondary: rgb(255, 193, 7);
+  --color-default: #1d1717;
+  --color-default-lighter: #36382E;
+  --color-background: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-default);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+#root {
+  max-width: 850px;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.logo {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.search {
+  grid-area: search;
+  display: flex;
+  align-items: center;
+}
+
+.cities {
+  grid-area: cities;
+  display: none;
+}
+
+.main {
+  grid-area: main;
+  margin: 20px 0;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media (min-width: 600px) {
+  #root {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 50px auto;
+    grid-template-areas: 
+      "logo logo"
+      "search search"
+      "cities main"
+      "footer footer";
+    grid-gap: 20px;
+  }
+
+  .cities {
+    display: block;
+  }
+
+  .main {
+    margin: 0;
+  }
+}
